@@ -5,3 +5,4 @@ nltk
 scikit-learn
 googletrans==4.0.0rc1
 langdetect
+python-docx
