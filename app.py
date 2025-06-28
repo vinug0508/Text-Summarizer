@@ -74,7 +74,7 @@ def textrank(document, num_sentences=5):
     normalized = TfidfTransformer().fit_transform(bow_matrix)
 
     similarity_graph = normalized * normalized.T
-    nx_graph = nx.from_scipy_sparse_matrix(similarity_graph)
+    nx_graph = nx.from_scipy_sparse_array(similarity_graph)
     scores = nx.pagerank(nx_graph)
     sentence_array = sorted(((scores[i], s) for i, s in enumerate(sentences)), reverse=True)
     
