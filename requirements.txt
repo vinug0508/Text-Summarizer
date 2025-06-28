@@ -1,0 +1,7 @@
+echo "streamlit
+networkx
+numpy
+nltk
+scikit-learn
+googletrans==4.0.0rc1
+langdetect" > requirements.txt
